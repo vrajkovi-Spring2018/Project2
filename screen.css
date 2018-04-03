@@ -138,11 +138,12 @@ h4 {
 }
 .description, .goals, .deliverables, .requirements{
   padding-top: 1em; /* 19px */
-  padding-left: 1.333em; /* 25.327px @ 19px / 1.333 ration */
+  padding-left: 1.777em; /* 33.761px @ 19px / 1.333 ratio */
 }
-.spacing{
-  padding-left: 1.333em; /* 25.327px @ 19px / 1.333 ration */
+#spacing{
+  padding-left: 1.333em; /* 25.327px @ 19px / 1.333 ratio */
 }
+
 
 /* ========== Layout ========== */
 
