@@ -136,6 +136,13 @@ h4 {
   text-transform: none;
   padding-bottom: 0.6315789474em;
 }
+.description, .goals, .deliverables, .requirements{
+  padding-top: 1em; /* 19px */
+  padding-left: 1.333em; /* 25.327px @ 19px / 1.333 ration */
+}
+.spacing{
+  padding-left: 1.333em; /* 25.327px @ 19px / 1.333 ration */
+}
 
 /* ========== Layout ========== */
 
@@ -492,3 +499,4 @@ td {
   .flexbox .agenda > ol {
     display: flex; /* My life for element/container queries...*/
   }
+}
