@@ -52,8 +52,8 @@ html {
   font-family: "Depot New W00", Helvetica, Arial, sans-serif;
   padding: 0.75em 9.2308%; /* 12px @ 16px/em; 60px / 650px*/
   padding-top: 0;
-  background-color: #E6ECD2;
-  color: #59453C;
+  background-color: #4C5D6F;
+  /* color: #59453C; */
 }
 body {
   font-size: 1.1875em;         /* ~ 19px base font size */
@@ -72,10 +72,18 @@ ins {
   text-decoration: none;
 }
 /* Links */
+h3 a {
+  text-decoration: none;
+  color: #C0C0C0;
+  border-bottom: 0.05263157895em solid;
+}
 a {
   text-decoration: none;
-  color: #567448;
   border-bottom: 0.05263157895em dotted;
+  color: #9E9E9E;
+}
+ul a {
+  color: #000050;
 }
 .preview a {
   color: #FFCE0B;
@@ -122,7 +130,7 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #93A341;
+  background-color: #313D4B;
   padding: 0.5em 0 0.5em 0.3em;
   margin-bottom: 0.2em;
 }
@@ -136,12 +144,20 @@ h4 {
   text-transform: none;
   padding-bottom: 0.6315789474em;
 }
+.description, .goals, .deliverables, .requirements{
+  padding-top: 1em; /* 19px */
+  padding-left: 1.777em; /* 33.761px @ 19px / 1.333 ratio */
+}
+#spacing{
+  padding-left: 1.333em; /* 25.327px @ 19px / 1.333 ratio */
+}
+
 
 /* ========== Layout ========== */
 
 html {
   /* Border for the nav to sit on */
-  border-top: 2.6875em solid #93A341; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
+  border-top: 2.6875em solid #313D4B; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
 }
 nav {
   position: absolute;
@@ -168,15 +184,15 @@ small,
 .tagline,
 .fineprint,
 .button {
-  font-weight: 200;
-  color: #777;
+  font-weight: 500;
+  color: #000;
   display: block;
 }
 .preview small {
-  color: #555;
+  color: #000;
 }
 .assigned small {
-  color: #555;
+  color: #000;
 }
 .label .button {
   font-size: 0.744018483em; /* ~ 19px @ 25.537px/em */
@@ -201,8 +217,8 @@ nav {
   text-align: center;
   line-height: 1;
   padding: 0.6315789474em 0.3157894737em; /* ~ 12px 6px @ 19px/em */
-  color: #333;
-  background-color: #93A341;
+  color: #C0C0C0;
+  background-color: #313D4B;
   border-bottom: 0;
 }
 
@@ -210,7 +226,7 @@ nav {
 #projects #nav-pro a,
 #policies #nav-pol a,
 #due_date #nav-dat a {
-  background-color: #FFCE0B;
+  background-color: #4C5D6F;
 }
 
 /* Calendar */
@@ -310,7 +326,7 @@ table, th, td {
 	padding: 0px 10px;
 }
 .tablehead {
-	background-color: #93A341;
+	background-color: #4C5D6F;
 	text-align: center;
   font-weight: 700;
 }
@@ -347,7 +363,7 @@ td {
   width: 120px;
 }
 .redfont {
-	color: red;
+  color: red;
 }
 .darkredfont {
   color: #d70000;
@@ -492,3 +508,4 @@ td {
   .flexbox .agenda > ol {
     display: flex; /* My life for element/container queries...*/
   }
+}
